@@ -1,11 +1,14 @@
 {
   "name": "crc32-from-arraybuffer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "keywords": [
     "crc32",
     "arraybuffer",
-    "uint8array"
+    "uint8array",
+    "browser",
+    "node",
+    "pnginfo"
   ],
   "homepage": "https://github.com/snomiao/CRC32FromArrayBuffer#readme",
   "bugs": {
