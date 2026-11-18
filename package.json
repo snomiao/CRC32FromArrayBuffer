@@ -35,7 +35,7 @@
   "scripts": {
     "build": "bun build:type && bun build:js && bun build:umd",
     "build:js": "bun build . --outdir=dist",
-    "build:type": "tsc -d --noEmit false --emitDeclarationOnly --outDir dist",
+    "build:type": "tsrs -d --noEmit false --emitDeclarationOnly --outDir dist",
     "build:umd": "bunx rollup dist/index.js --file dist/index.umd.js --format umd --name \"main\"",
     "prerelease": "bun run build && bun run test",
     "release": "bunx standard-version && git push --follow-tags && npm publish",
@@ -76,7 +76,8 @@
   },
   "devDependencies": {
     "@types/bun": "^1.1.14",
-    "@types/jest": "^29.5.14"
+    "@types/jest": "^29.5.14",
+    "tsrs": "0.25.0-ts7.1.0-beta"
   },
   "peerDependencies": {
     "typescript": "^5.7.2"
